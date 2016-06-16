@@ -1,0 +1,103 @@
+
+@font-face{
+	font-family: MyriadPro-Regular;
+	src: url(../styles/MyriadPro-Regular.otf);
+}
+
+@keyframes pulsation {
+	10% {opacity: 0.8; height: 15px; width: 15px;}
+    30% {opacity: 0.6; height: 20px; width: 20px;}
+    60% {opacity: 0.4; height: 25px; width: 25px;}
+    80% {opacity: 0.2; height: 30px; width: 30px;}
+}
+
+/*wrapper for centering on viewport*/
+.main-wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+	height: 500px;
+}
+
+.map{
+   position: relative;
+   width: 1000px;
+   height: 500px;
+   background-image: url('../images/map.gif');
+}
+
+.point-wrapper{
+	position: absolute;
+	width: 35px;
+	height: 52px;
+}
+
+.point-wrapper_a{
+	bottom: 307px;
+	left: 140px;
+}
+
+.point-wrapper_b{
+	bottom: 127px;
+	left: 480px;
+}
+
+.point-wrapper_c{
+	bottom: 240px;
+	right: 140px;
+}
+
+.point-wrapper_d{
+	bottom: 50px;
+    right: 190px;
+}
+
+.point-wrapper__point{
+	height: 12px;
+	width: 12px;
+	margin: 9px auto 17px;
+	background-color: white;
+	border-radius: 50%;
+}
+
+.point-wrapper:hover .point-wrapper__point.add-pulsation{
+    animation-name: pulsation;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+#point_a{
+	background-color: yellow;
+}
+
+.point-wrapper__label{
+	position: fixed;
+	display: none;
+	height: 13px;
+	font-family: MyriadPro-Regular;
+	font-size: 11px;
+	color: white;
+	background: pink;
+	
+}
+
+.line{
+	stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    transition: stroke-dashoffset 1s;
+}
+
+.dotted-line{
+	visibility: hidden;
+}
+
+.scenario-button{
+	display: block;
+	width: 100px;
+	height: 50px;
+	margin-top: 30px;
+	border-radius: 10px;
+	background-color: #ffff99;
+}

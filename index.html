@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<meta charset="utf-8">
+    	<link rel="stylesheet" href="styles/main.css">
+    	<script type = "text/javascript" 
+         src = "http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    	<script src="js/main.js"></script>
+		<title>Test</title>
+	</head> 
+	<body>
+        <button type="button" class="scenario-button" id="scenario1">Click for scenario 1</button>
+        <button type="button" class="scenario-button" id="scenario2">Click for scenario 2</button>
+		<main class="main-wrapper">
+			<div class="map">
+				<div class='point-wrapper point-wrapper_a'>
+					<div class="point-wrapper__point" id="point_a"></div>
+					<div class="point-wrapper__label">Point A</div>
+				</div>
+				<div class='point-wrapper point-wrapper_b'>
+            		<div class="point-wrapper__point" id="point_b"></div>
+            		<div class="point-wrapper__label">Point B</div>
+            	</div>
+            	<div class='point-wrapper point-wrapper_c'>
+            		<div class="point-wrapper__point" id="point_c"></div>
+            		<div class="point-wrapper__label">Point C</div>
+            	</div>
+            	<div class='point-wrapper point-wrapper_d'>
+            		<div class="point-wrapper__point" id="point_d"></div>
+            		<div class="point-wrapper__label">Point D</div>
+            	</div>
+            	<svg width="1000" height="500">
+                   <path class="line a-b" d="M165,155 Q400,160 495,330" fill="none" stroke="white" stroke-width="1px" />
+                   <path class="dotted-line a-d" d="M165,155 Q570,50 790,410" fill="none" stroke="white" stroke-dasharray="10,15" stroke-width="1px" />
+                   <path class="line a-c" d="M165,155 Q500,-45 835,220" fill="none" stroke="white" stroke-width="1px" />
+                </svg>
+			</div>
+		</main>
+	</body>
+</html>
+
